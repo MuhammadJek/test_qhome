@@ -12,6 +12,10 @@ FOLDER : TEST_PHP/file_test_qhome.php
 
 ## About API LARAVEL
 
+## LIST FIL
+LINK : your_host/api/film
+
+
 **Soal 1:**
 
 Buatlah API sederhana untuk menampilkan daftar film berdasarkan genre. API ini harus menerima parameter "genre" melalui metode GET dan mengembalikan JSON berisi daftar film dengan genre tersebut.
