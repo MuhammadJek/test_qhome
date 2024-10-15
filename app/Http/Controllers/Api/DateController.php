@@ -10,8 +10,16 @@ class DateController extends Controller
 {
     public function now()
     {
-        return response()->json(
-            ['status' => 'success', 'datetime' => Carbon::parse(now())->format('D, d M Y H:i:s')]
-        );
+        try {
+            //code...
+            return response()->json(
+                ['message' => 'Berhasil', 'status' => true, 'datetime' => Carbon::parse(now())->format('D, d M Y H:i:s')]
+            );
+        } catch (\Throwable $th) {
+            //throw $th;
+            return response()->json(
+                ['message' => 'Gagal', 'status' => true]
+            );
+        }
     }
 }
