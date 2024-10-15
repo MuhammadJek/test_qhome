@@ -28,7 +28,7 @@ class FilmController extends Controller
             //throw $th;
             DB::rollBack();
             return response()->json([
-                'message' => "Not Get Data Success",
+                'message' => "Fails Get Data",
                 'status' => false,
             ], 400);
         }
