@@ -26,6 +26,8 @@ LINK : your_host/api/film/{genre}
 
 Buatlah API sederhana untuk menghitung luas persegi panjang. API ini harus menerima parameter "panjang" dan "lebar" melalui metode POST dan mengembalikan JSON berisi nilai luas.
 
+(dont forget with request parameter panjang dan lebar).
+
 LINK : your_host/api/luas
 
 **Soal 3:**
