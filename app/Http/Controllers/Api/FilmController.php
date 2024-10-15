@@ -42,7 +42,7 @@ class FilmController extends Controller
             if ($data->isEmpty()) {
 
                 return response()->json([
-                    'message' => "Not Find Data Success",
+                    'message' => "Fails Find Data",
                     'status' => true,
                 ], 404);
             } else {
