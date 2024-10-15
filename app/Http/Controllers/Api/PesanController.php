@@ -20,7 +20,7 @@ class PesanController extends Controller
 
             if ($validator->fails()) {
                 return response()->json([
-                    'message' => 'Fails create message',
+                    'message' => 'Gagal create message',
                     'status' => false,
                     'data' => $validator->errors(),
                 ], 422);
@@ -31,7 +31,7 @@ class PesanController extends Controller
             ]);
             DB::commit();
             return response()->json([
-                'message' => 'Success create message',
+                'message' => 'Berhasil create message',
                 'status' => true,
                 'data' => $message,
             ], 200);
@@ -39,7 +39,7 @@ class PesanController extends Controller
             //throw $th;
             DB::rollBack();
             return response()->json([
-                'message' => 'Success create message',
+                'message' => 'Gagal create message',
                 'status' => true,
                 'data' => $th,
             ], 500);
